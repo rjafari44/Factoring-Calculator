@@ -19,12 +19,17 @@ p = poly2sym(coeffs, x);
 % compute the factoring
 factors = factor(p);
 
+% check to see if the polynomial is factorable or not
+if isequal(factors, p)
+    disp(' ')
+    disp('The polynomial is not factorable');
+else
+    disp('Factored polynomial:');
+    disp(factors);
+end
+
 % find the numerical roots of a polynomial from a coefficient vector
 r = roots(coeffs);
-
-% display the resultant factored polynomial
-disp('Factored polynomial:')
-disp(factors)
 
 disp(' ') % add a space between
 
