@@ -4,11 +4,10 @@ if exist('OCTAVE_VERSION', 'builtin') ~= 0
 end
 
 % variable declaration
-syms x;
 coeffs = [];
-factors = [];
-p = 0;
-r = 0;
+factors = [];   
+p = [];
+r = [];
 
 % get user input for the coefficients of the polynomial
 disp(' ');
