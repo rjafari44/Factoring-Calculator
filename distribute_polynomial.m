@@ -4,6 +4,7 @@ if exist('OCTAVE_VERSION', 'builtin') ~= 0
 end
 
 % variable declaration
+syms x;
 factored_p = [];
 expanded_p = [];
 
